@@ -1,0 +1,16 @@
+$ejemplo = "Hola codigo global"
+class HolaMundo 
+	def initialize()
+		@ejemplo = "Soy Una variable de instancia"
+        $ejemplo = "Fui modificado" #Aqui Es Una Prueba
+	end
+	def saluda()
+		ejemplo = "soy una variable local xD"
+		puts ejemplo
+		puts @ejemplo
+		puts $ejemplo 
+	end
+end
+objeto = HolaMundo.new()
+objeto.saluda
+gets()
